@@ -1,0 +1,18 @@
+# For deployment in Docker containers
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: false
+      uri: http://localhost:8888
+
+eureka.client.serviceUrl.defaultZone: http://192.168.99.100:8761/eureka/
+---
+# For deployment in Docker containers
+spring:
+  profiles: docker
+  cloud:
+    config:
+      discovery:
+        enabled: false
+      uri: http://192.168.99.100:8888
