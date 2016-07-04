@@ -1,4 +1,4 @@
-# For deployment in Docker containers
+# For deployment in localhost machine
 spring:
   cloud:
     config:
@@ -6,7 +6,7 @@ spring:
         enabled: false
       uri: http://localhost:8888
 
-eureka.client.serviceUrl.defaultZone: http://192.168.99.100:8761/eureka/
+
 ---
 # For deployment in Docker containers
 spring:
